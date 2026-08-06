@@ -12,7 +12,7 @@ import java.time.Instant;
 import java.util.Arrays;
 
 @Configuration
-@Profile("test")
+@Profile({"dev", "test"})
 public class TestConfig implements CommandLineRunner {
 
     @Autowired
